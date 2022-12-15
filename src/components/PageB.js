@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 const PageB = ({ a, b, decA, incB }) => {
 	return (
 		<div>
-			{a} {b}
+			A:{a} B:{b}
 			<br />
 			<Button variant="secondary" onClick={decA}>
 				Decrement A

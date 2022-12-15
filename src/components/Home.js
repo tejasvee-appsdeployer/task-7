@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 const Home = ({ a, b, incA, incB }) => {
 	return (
 		<div>
-			{a} {b}
+			A:{a} B:{b}
 			<br />
 			<Button variant="primary" onClick={incA}>
 				Increment A
