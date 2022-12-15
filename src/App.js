@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import FormPage from "./components/FormPage";
 import Home from "./components/Home";
 import Layout from "./components/Layout";
 import PageA from "./components/PageA";
@@ -26,6 +27,7 @@ function App() {
 						path="/b"
 						element={<PageB a={a} b={b} decA={decA} incB={incB} />}
 					/>
+					<Route path="/form" element={<FormPage />} />
 					<Route path="*" element={<>404</>} />
 				</Route>
 			</Routes>
