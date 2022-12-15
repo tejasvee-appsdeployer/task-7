@@ -10,14 +10,16 @@ const router = createBrowserRouter([
 	{
 		path: "/",
 		element: <App />,
-	},
-	{
-		path: "/a",
-		element: <PageA />,
-	},
-	{
-		path: "/b",
-		element: <PageB />,
+		children: [
+			{
+				path: "/a",
+				element: <PageA />,
+			},
+			{
+				path: "/b",
+				element: <PageB />,
+			},
+		],
 	},
 ]);
 

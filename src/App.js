@@ -1,6 +1,7 @@
 import "./App.css";
 import { Nav, Container, Navbar } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Outlet } from "react-router-dom";
 
 function App() {
 	return (
@@ -15,6 +16,9 @@ function App() {
 					</Nav>
 				</Container>
 			</Navbar>
+			<Container>
+				<Outlet />
+			</Container>
 		</div>
 	);
 }
