@@ -1,9 +1,13 @@
 import { Button } from "react-bootstrap";
+import Header from "./Header";
 
 const PageB = ({ a, b, decA, incB }) => {
 	return (
 		<div>
-			A:{a} B:{b}
+			<Header name={"B"} />
+			<p className="fs-2">
+				A:{a} B:{b}
+			</p>
 			<br />
 			<Button variant="secondary" onClick={decA}>
 				Decrement A
