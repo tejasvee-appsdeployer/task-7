@@ -1,14 +1,16 @@
 import { Button } from "react-bootstrap";
+import ComponentA from "./ComponentA";
+import ComponentB from "./ComponentB";
 import Header from "./Header";
 
-const PageA = ({ a, b, incA, decB }) => {
+function PageA({ a, b, incA, decB }) {
 	return (
 		<div>
 			<Header name={"A"} />
-			<p className="fs-2">
-				A:{a} B:{b}
-			</p>
-			<br />
+			<div className="">
+				<ComponentA a={a} />
+				<ComponentB b={b} />
+			</div>
 			<Button variant="primary" onClick={incA}>
 				Increment A
 			</Button>{" "}
@@ -17,5 +19,5 @@ const PageA = ({ a, b, incA, decB }) => {
 			</Button>
 		</div>
 	);
-};
+}
 export default PageA;

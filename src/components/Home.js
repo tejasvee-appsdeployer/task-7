@@ -1,18 +1,30 @@
 import { Button } from "react-bootstrap";
+import ComponentA from "./ComponentA";
+import ComponentB from "./ComponentB";
 import Header from "./Header";
 
-const Home = ({ a, b, incA, incB }) => {
+const Home = ({ a, b, setA, setB }) => {
 	return (
 		<div>
 			<Header name={"HOME"} />
-			<p className="fs-2">
-				A:{a} B:{b}
-			</p>
-			<br />
-			<Button variant="primary" onClick={incA}>
+			<div className="position">
+				<ComponentA a={a} />
+				<ComponentB b={b} />
+			</div>
+			<Button
+				variant="primary"
+				onClick={() => {
+					setA(a + 1);
+				}}
+			>
 				Increment A
 			</Button>{" "}
-			<Button variant="primary" onClick={incB}>
+			<Button
+				variant="primary"
+				onClick={() => {
+					setB(b + 1);
+				}}
+			>
 				Increment B
 			</Button>
 		</div>

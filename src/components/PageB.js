@@ -1,14 +1,16 @@
 import { Button } from "react-bootstrap";
+import ComponentA from "./ComponentA";
+import ComponentB from "./ComponentB";
 import Header from "./Header";
 
 const PageB = ({ a, b, decA, incB }) => {
 	return (
 		<div>
 			<Header name={"B"} />
-			<p className="fs-2">
-				A:{a} B:{b}
-			</p>
-			<br />
+			<div className="position">
+				<ComponentA a={a} />
+				<ComponentB b={b} />
+			</div>
 			<Button variant="secondary" onClick={decA}>
 				Decrement A
 			</Button>{" "}

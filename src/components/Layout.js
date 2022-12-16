@@ -9,10 +9,16 @@ const Layout = () => {
 					<Navbar.Brand>
 						<Link to="/">Home</Link>
 					</Navbar.Brand>
-					<Nav className="me-auto">
-						<Nav.Link href="/a">A</Nav.Link>
-						<Nav.Link href="/b">B</Nav.Link>
-						<Nav.Link href="/form">Form Page</Nav.Link>
+					<Nav className="row text-center me-auto">
+						<Link className="m-auto col" to="/a">
+							A
+						</Link>
+						<Link className="m-auto col" to="/b">
+							B
+						</Link>
+						<Link className="m-auto col" to="/form">
+							Form Page
+						</Link>
 					</Nav>
 				</Container>
 			</Navbar>
