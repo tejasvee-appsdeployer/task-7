@@ -7,7 +7,7 @@ function PageA({ a, b, incA, decB }) {
 	return (
 		<div>
 			<Header name={"A"} />
-			<div className="">
+			<div className="position">
 				<ComponentA a={a} />
 				<ComponentB b={b} />
 			</div>
